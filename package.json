@@ -1,0 +1,24 @@
+{
+  "name": "site-blue-mar-hostel",
+  "version": "1.0.0",
+  "description": "[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)\r [![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com)\r [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com)\r [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinaud/Site-Blue-Mar-Hostel.git"
+  },
+  "author": "João Vinaud",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vinaud/Site-Blue-Mar-Hostel/issues"
+  },
+  "homepage": "https://github.com/vinaud/Site-Blue-Mar-Hostel#readme",
+  "dependencies": {
+    "gatsby": "^2.21.19",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
