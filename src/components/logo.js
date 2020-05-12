@@ -1,11 +1,10 @@
 import React from 'react';
-
+import img from '../assets/logo.jpg';
 
 const Logo = () => {
     return (
-        <div className =' text-white '>
-        <h1 className='font-bold text-2xl'>Blue</h1>
-        <p className='text-xs'>Mar Hostel</p>
+      <div className =' text-white '>
+        <img className="my-4 object-scale-down h-40 w-40" src={img} alt="Logo"/>
       </div>
     )
 }
