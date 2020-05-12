@@ -1,11 +1,17 @@
 import React from 'react';
 import BtnContato from '../components/BtnContato';
-import logo from '../components/logo';
+import Logo from '../components/logo';
 
-const Header = () => {
+const Header = ({children}) => {
     return(
         <div>
-        
+            <header className = 'p-4 bg-indigo-800 sm:flex justify-between items-center'>
+            <Logo />
+            <div>
+              <BtnContato/>
+            </div>
+
+            </header>
         </div>
     )
 }
