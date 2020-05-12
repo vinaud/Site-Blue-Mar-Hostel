@@ -1,5 +1,7 @@
 import React from 'react';
 import { Helmet} from 'react-helmet';
+import Footer from '../components/Footer';
+import './styles.css';
 
 const Index = () => {
     return(
@@ -9,6 +11,7 @@ const Index = () => {
             </Helmet>
             <h1> Hello Warudo </h1>
             <a href="https://api.whatsapp.com/send?phone=1111111111">Send Message</a>
+            <Footer/>
         </div>
     )
 }
