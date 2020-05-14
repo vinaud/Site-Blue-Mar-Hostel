@@ -28,8 +28,7 @@ const Index = () => {
             </Helmet>
             <Header/>
             <Hero/>
-            <h1> Hello Warudo </h1>
-            <a href="https://api.whatsapp.com/send?phone=1111111111">Send Message</a>
+            
             <Footer/>
         </div>
     )
