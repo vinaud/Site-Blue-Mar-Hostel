@@ -11,8 +11,8 @@ const Hero = () => {
         <div className='p-32 flex flex-col items-center  sm: bg-cover bg-center  text-center justify-between bg-fixed ' style={{ backgroundImage: `url(${heroImg})` }}  >
               <div className='  rounded-lg p-8 bg-gray-300 bg-opacity-50'>
                   <h2 className='font-bold text-6xl text-black text-center '>Sua casa fora de casa</h2>
-                  <p className='text-2xl text-black '>Localizado bem pertinho da praia de Ponta Negra</p>
-                  <p className='text-2xl text-black'>Faça sua reserva conosco </p>
+                  <p className='text-4xl text-black '>Localizado bem pertinho da praia de Ponta Negra</p>
+                  <p className='text-4xl text-black'>Faça sua reserva conosco </p>
                   
               </div>
               
