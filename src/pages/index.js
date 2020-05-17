@@ -4,6 +4,9 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import './styles.css';
 import heroImg from '../assets/hero.jpg';
+import cafe from '../assets/cafe.jpg';
+import livro from '../assets/livro.jpg';
+import rede from '../assets/rede.jpg';
 
 const Hero = () => {
     
@@ -29,7 +32,11 @@ const Index = () => {
             </Helmet>
             <Header/>
             <Hero/>
-            
+            <div className='flex flex-col sm:flex-row justify-around'>
+              <img className="my-4 object-scale-down h-48 w-48" src={cafe} alt="Café da manhã"/>
+              <img className="my-4 object-scale-down h-48 w-48" src={livro} alt="Biblioteca"/>
+              <img className="my-4 object-scale-down h-48 w-48" src={rede} alt="Área de descanso"/>
+            </div>
             <Footer/>
         </div>
     )
