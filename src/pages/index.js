@@ -33,9 +33,18 @@ const Index = () => {
             <Header/>
             <Hero/>
             <div className='flex flex-col sm:flex-row justify-around'>
-              <img className="my-4 object-scale-down h-48 w-48" src={cafe} alt="Café da manhã"/>
-              <img className="my-4 object-scale-down h-48 w-48" src={livro} alt="Biblioteca"/>
-              <img className="my-4 object-scale-down h-48 w-48" src={rede} alt="Área de descanso"/>
+              <div className='flex flex-col justify-around'>
+                  <img className="my-4 object-scale-down h-48 w-48" src={cafe} alt="Café da manhã"/>
+                  <h3 className="font-bold  text-black text-center ">Café da manhã completo</h3>
+              </div>
+              <div className='flex flex-col justify-around'>
+                  <img className="my-4 object-scale-down h-48 w-48" src={livro} alt="Biblioteca"/>
+                  <h3 className="font-bold  text-black text-center ">Biblioteca compartilhada</h3>
+              </div>
+              <div className='flex flex-col justify-around'>
+                  <img className="my-4 object-scale-down h-48 w-48" src={rede} alt="Área de descanso"/>
+                  <h3 className="font-bold  text-black text-center ">Áreas de lazer e descanso</h3>
+              </div>
             </div>
             <Footer/>
         </div>
