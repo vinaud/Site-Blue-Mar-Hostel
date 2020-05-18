@@ -8,6 +8,24 @@ import cafe from '../assets/cafe.jpg';
 import livro from '../assets/livro.jpg';
 import rede from '../assets/rede.jpg';
 
+const Selos = () => {
+    return(
+        <div className='pb-8 bg-gray-400 flex flex-col sm:flex-row justify-around'>
+    <div className='flex flex-col justify-around'>
+        <img className="my-4 object-scale-down h-64 w-64" src={cafe} alt="Café da manhã"/>
+        <h1 className="text-xl font-bold  text-black text-center ">Café da manhã completo</h1>
+    </div>
+    <div className='flex flex-col justify-around'>
+        <img className="my-4 object-scale-down h-64 w-64" src={livro} alt="Biblioteca"/>
+        <h2 className="text-xl font-bold  text-black text-center ">Biblioteca compartilhada</h2>
+    </div>
+    <div className='flex flex-col justify-around'>
+        <img className="my-4 object-scale-down h-64 w-64" src={rede} alt="Área de descanso"/>
+        <h2 className="text-xl font-bold  text-black text-center ">Áreas de lazer e descanso</h2>
+    </div>
+  </div>)
+}
+
 const Hero = () => {
     
     return(
@@ -32,20 +50,7 @@ const Index = () => {
             </Helmet>
             <Header/>
             <Hero/>
-            <div className='pb-8 bg-gray-400 flex flex-col sm:flex-row justify-around'>
-              <div className='flex flex-col justify-around'>
-                  <img className="my-4 object-scale-down h-64 w-64" src={cafe} alt="Café da manhã"/>
-                  <h1 className="text-xl font-bold  text-black text-center ">Café da manhã completo</h1>
-              </div>
-              <div className='flex flex-col justify-around'>
-                  <img className="my-4 object-scale-down h-64 w-64" src={livro} alt="Biblioteca"/>
-                  <h2 className="text-xl font-bold  text-black text-center ">Biblioteca compartilhada</h2>
-              </div>
-              <div className='flex flex-col justify-around'>
-                  <img className="my-4 object-scale-down h-64 w-64" src={rede} alt="Área de descanso"/>
-                  <h2 className="text-xl font-bold  text-black text-center ">Áreas de lazer e descanso</h2>
-              </div>
-            </div>
+            <Selos/>
             <Footer/>
         </div>
     )
