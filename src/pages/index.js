@@ -8,6 +8,12 @@ import cafe from '../assets/cafe.jpg';
 import livro from '../assets/livro.jpg';
 import rede from '../assets/rede.jpg';
 import Room from '../entities/room.js';
+import cisne from '../assets/quartos/cisne.jpg'
+import amazonas from '../assets/quartos/amazonas.jpeg'
+import atrevida from '../assets/quartos/atrevida.jpg'
+import bounty from '../assets/quartos/bounty.jpeg'
+import endurance from '../assets/quartos/endurance.jpg'
+import plancton from '../assets/quartos/plancton.jpg'
 
 const Selos = () => {
     return(
@@ -45,12 +51,12 @@ const Hero = () => {
 }
 
 const Index = () => {
-    const quartos = [new Room("Plâncton","",""),
-    new Room("Amazonas","",""),
-    new Room("Cisne Branco","",""),
-    new Room("Endurance","",""),
-    new Room("Bounty","",""),
-    new Room("Atrevida","","")];
+    const quartos = [new Room("Plâncton","Quarto com cama para casal, ar-condicionado, TV, banheiro próprio." ,plancton),
+    new Room("Amazonas","Quarto com cama para casal, uma cama solteiro, dois beliches, ar-condicionado, TV, banheiro próprio.",amazonas),
+    new Room("Cisne Branco","Quarto com cama para casal, um beliche, ar-condicionado, TV, banheiro próprio.",cisne),
+    new Room("Endurance","Quarto com cama para casal,um beliche, ar-condicionado, TV, banheiro próprio. ",endurance),
+    new Room("Bounty","Quarto com cama para casal,um beliche, ar-condicionado, TV, banheiro próprio." ,bounty),
+    new Room("Atrevida","Quarto compartilhado misto, com quatro beliches, ventilador e banheiro próprio.",atrevida)];
 
     return(
         <div>
@@ -66,11 +72,11 @@ const Index = () => {
               {quartos.map((quarto) => {
                      return(
                        <div className='max-w-sm'>
-                        <div className=' m-6 rounded shadow-lg'>
-                            <img  src={require('../assets/cafe.jpg')} alt='Quarto'/>
+                        <div className=' m-6 rounded shadow-lg sm:flex flex-col '>
+                            <img  src={quarto.image} alt='Quarto'/>
                             <div className='px-6 py-4'>
                                 <p className ='font-bold text-xl mb-2'>{quarto.name}</p>
-                                <p>Descrição</p>
+                                <p>{quarto.description}</p>
                             </div>
                         </div>
                       </div>
