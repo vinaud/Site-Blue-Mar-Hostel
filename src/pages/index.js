@@ -7,6 +7,7 @@ import heroImg from '../assets/hero.jpg';
 import cafe from '../assets/cafe.jpg';
 import livro from '../assets/livro.jpg';
 import rede from '../assets/rede.jpg';
+import Room from '../entities/room.js';
 
 const Selos = () => {
     return(
@@ -27,7 +28,7 @@ const Selos = () => {
 }
 
 const Hero = () => {
-    
+    let quarto1 = new Room("","","");
     return(
         <div className='p-32 flex flex-col items-center  sm: bg-cover bg-center  text-center justify-between bg-fixed ' style={{ backgroundImage: `url(${heroImg})` }}  >
               <div className='  rounded-lg p-8 bg-gray-300 bg-opacity-50'>
