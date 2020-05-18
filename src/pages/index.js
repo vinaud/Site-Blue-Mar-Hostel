@@ -14,6 +14,7 @@ import atrevida from '../assets/quartos/atrevida.jpg'
 import bounty from '../assets/quartos/bounty.jpeg'
 import endurance from '../assets/quartos/endurance.jpg'
 import plancton from '../assets/quartos/plancton.jpg'
+import logo from '../assets/logo.jpg';
 
 const Selos = () => {
     return(
@@ -62,6 +63,7 @@ const Index = () => {
         <div>
             <Helmet>
                  <title>Blue Mar Hostel</title>
+                 <link rel="icon" href={logo}/>
             </Helmet>
             <Header/>
             <Hero/>
