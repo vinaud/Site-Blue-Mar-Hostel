@@ -11,7 +11,7 @@ const BtnContato = () => {
         type="button"
         onClick={(e) => {
           e.preventDefault();
-          window.location.href='https://api.whatsapp.com/send?phone=+5584981565870';
+          window.open('https://api.whatsapp.com/send?phone=+5584981565870', "_blank")
           }}
     >
                <img className="object-scale-down h-20 w-20"  src={wa} alt='Whatsapp'/>
