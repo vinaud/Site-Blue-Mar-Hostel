@@ -64,6 +64,9 @@ const Index = () => {
             <Helmet>
                  <title>Blue Mar Hostel</title>
                  <link rel="icon" href={logo}/>
+                 <meta name="description" content="Bem-vindo ao Blue Mar Hostel" />
+                 <meta property="og:title" content="Blue Mar Hostel" />
+                 <meta property="og:image" content={heroImg} />
             </Helmet>
             <Header/>
             <Hero/>
